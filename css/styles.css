@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 html {
     /* background: url(../images/bg-hash.svg) no-repeat center center fixed;
@@ -29,6 +29,7 @@ nav {
     align-items: center;
     padding: 1rem 0rem;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin: none;
     position: fixed;
     width: 100%;
@@ -317,4 +318,36 @@ nav {
     width: 40px;
     height: auto;
     border-radius: 2px;
+}
+
+.work {
+    margin: 100px 2rem;
+    text-align: left;
+    height: auto;
+    background-image: linear-gradient(to right, #cbd5e0, #ecc94b, #fbb6ce);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: black;
+}
+
+.work h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+}
+
+.button-3 {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
 }
