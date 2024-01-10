@@ -167,7 +167,7 @@ nav {
     flex-direction: column;
     margin: 3rem 2rem;
     text-align: center;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 #home img {
