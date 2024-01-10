@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas Jha</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <nav class="nav-mobile">
+        <!-- <div class="logo"><img src="./images/profile-pic.gif" alt="profile-pic"> </div> -->
+        <div class="extras">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./experience.html">Experience</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./resume.pdf">Resume</a>
+                </div>
+            </div>
+        </div>
+        <button class="theme" onclick="theme()"><img src="./images/themes.png" alt="theme mode"></button>
+    </nav>
+    <nav class="nav-pc">
+        <div class="logo"><img src="./images/profile-pic.gif" alt="profile-pic"> </div>
+        <div class="links">
+            <div>
+                <a href="./index.html">Home</a>
+            </div>
+            <div>
+                <a href="./about.html">About</a>
+            </div>
+            <div>
+                <a href="./experience.html">Experience</a>
+            </div>
+            <div>
+                <a href="./projects.html">Projects</a>
+            </div>
+            <div>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="extras">
+            <div class="theme">
+                <button>Dark/Light</button>
+            </div>
+            <div class="resume">
+                <a href="./resume.pdf">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div>
+            <img src="./images/landing.png">
+        </div>
+        <div class="home-text">
+            <h1>I'm <span class="greentext">Manas Jha</span>, Web <span class="greentext">Developer</span> and <span
+                    class="greentext"> designer.</span>
+            </h1>
+            <p>I am based in India. I design and Develop <span class="greentext">attractive</span> and <span
+                    class="greentext">appealing</span> web
+                applications with a focus on <span class="greentext">user experience</span> and
+                <span class="greentext">quality</span>.
+            </p>
+            <div class="cta-group">
+                <button class="button-1">Contact Me</button>
+                <button class="button-2">My Work</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
