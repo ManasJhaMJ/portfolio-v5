@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 html {
-    /* background: url(../images/bg-hash.svg) no-repeat center center fixed;
-    background-size: cover; */
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -169,12 +168,38 @@ nav {
     background-clip: text;
 }
 
+.btt-btn {
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    animation: up 0.5s ease-in-out infinite alternate;
+}
+
+.btt-btn img {
+    background-color: white;
+    padding: 0;
+    width: 40px;
+    border-radius: 50%;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 3rem 2rem 60px 2rem;
+    padding: 3rem 0rem 60px 0rem;
+    margin: 0 2rem;
     text-align: center;
     height: calc(100vh - 50px);
 }
