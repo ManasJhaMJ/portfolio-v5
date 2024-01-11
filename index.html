@@ -49,16 +49,16 @@
         </div>
         <div class="extras">
             <div class="theme">
-                <button>Dark/Light</button>
+                <button class="theme" onclick="theme()"><img src="./images/themes.png" alt="theme mode"></button>
             </div>
             <div class="resume">
-                <a href="./resume.pdf">Resume</a>
+                <a class="button-2" href="./resume.pdf">Resume</a>
             </div>
         </div>
     </nav>
 
     <section id="home">
-        <div>
+        <div class="home-img">
             <img src="./images/landing.png">
         </div>
         <div class="home-text">
@@ -78,15 +78,15 @@
     </section>
     <section id="des-dev">
         <div class="des-dev-text">
-            <h2>Creative Design for High Quality Development.</h1>
-                <p>
-                    I oversee the entire product development journey, from crafting the interface to delivering a fully
-                    functional application. I bring ideas to life, ensuring top-notch design and leveraging cutting-edge
-                    software for a seamless user experience.
-                </p>
+            <h2>Creative Design for High Quality Development.</h2>
+            <p>
+                I oversee the entire product development journey, from crafting the interface to delivering a fully
+                functional application. I bring ideas to life, ensuring top-notch design and leveraging cutting-edge
+                software for a seamless user experience.
+            </p>
         </div>
-        <div>
-            <div>
+        <div class="container">
+            <div class="container-col">
                 <img src="./images/1.svg">
                 <h3>Designing</h3>
                 <p>
@@ -94,12 +94,12 @@
                     typography and more, all pixel perfect and beautiful.
                 </p>
             </div>
-            <div>
+            <div class="container-col">
                 <img src="./images/2.svg">
                 <h3>Development</h3>
                 <p>
                     I create functional, beautiful and responsive frontend applications for the web with modern
-                    technologies.
+                    technologies and best practices.
                 </p>
             </div>
         </div>
@@ -107,7 +107,9 @@
 
     <section id="skills">
         <h1>Skills</h1>
-        <div class="skills-bg">
+        <hr>
+        <p>Here are a few technologies I've been working with recently:</p>
+        <div class="skills-bg glassmorphic-card">
             <div class="card glassmorphic-card-mobile">
                 <img src="./images/icons/html.png" alt="html5">
             </div>
@@ -156,10 +158,14 @@
         </div>
     </section>
 
-    <div class="work">
-        <h1>Lets Build Something Together!</h1>
-        <p>Turning ideas into real life products is my calling. Let's do this!</p>
-        <button class="button-3">Connect With me!</button>
+    <div class="work-container">
+        <div class="work">
+            <div>
+                <h1>Lets Build Something Together!</h1>
+                <p>Turning ideas into real life products is my calling. Let's do this!</p>
+            </div>
+            <button class="button-3">Connect With me!</button>
+        </div>
     </div>
 
     <script type="text/javascript" src="./vanilla-tilt.js"></script>
