@@ -11,11 +11,18 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    color: black;
+    transition: all 0.3s ease-in;
+    background: url(../images/bg-white.png) no-repeat center center fixed;
 }
 
+
 .dark-mode {
+    transition: all 0.3s ease-in;
     background-color: #1b202d !important;
     color: #fff !important;
+    background: url(../images/bg.png) no-repeat center center fixed;
 }
 
 a {
@@ -33,6 +40,7 @@ nav {
     margin: none;
     position: fixed;
     width: 100%;
+    height: 50px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -74,7 +82,7 @@ nav {
     border: none;
     background-color: inherit;
     cursor: pointer;
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 
 .theme img {
@@ -126,7 +134,7 @@ nav {
     display: none;
     position: absolute;
     background-image: linear-gradient(to top right, #319795, #48bb78);
-    min-width: 85vw;
+    min-width: 86vw;
     text-align: center;
     height: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -166,9 +174,9 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 3rem 2rem;
+    margin: 3rem 2rem 60px 2rem;
     text-align: center;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
 }
 
 #home img {
@@ -318,6 +326,11 @@ nav {
     width: 40px;
     height: auto;
     border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-bg img:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .work {
@@ -350,4 +363,209 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-pc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+    }
+
+    .links a {
+        padding: 0 1.5rem;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+        color: #48bb78;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .resume {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .theme {
+        margin-right: 0;
+        padding-right: 2rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .theme:hover {
+        transform: rotate(180deg);
+    }
+
+    .resume:hover {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    .theme {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    #home {
+        flex-direction: row;
+    }
+
+    .home-img {
+        width: 45%;
+        height: auto;
+        margin-right: 3rem;
+    }
+
+    .home-text {
+        text-align: left;
+        width: 40%;
+    }
+
+    .home-text h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .home-text p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 1.5rem;
+        width: 70%;
+    }
+
+    .button-1 {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button-1:hover {
+        background-image: linear-gradient(to top right, #319795, #48bb78);
+        color: #fff;
+    }
+
+    .button-2 {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button-2:hover {
+        color: black;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .container-col {
+        width: 30%;
+        height: auto;
+        padding: 10px 50px;
+    }
+
+    #des-dev {
+        margin: 0px 3rem;
+        width: auto;
+        height: 80vh;
+    }
+
+    #des-dev h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    #des-dev h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .des-dev-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .des-dev-text p {
+        width: 50% !important;
+    }
+
+    #des-dev p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 2.5rem;
+    }
+
+    #skills {
+        margin: 100px 5rem;
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills hr {
+        width: 70%;
+        opacity: 0.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills-bg {
+        width: 40%;
+        padding: 3rem;
+    }
+
+    .card {
+        width: auto;
+        height: 70px;
+    }
+
+    .skills-bg img {
+        width: 60px;
+        height: auto;
+    }
+
+    .work-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .work {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 0 4rem 0;
+    }
+
+    .work h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 1.5rem 0 0 0;
+    }
+
 }
